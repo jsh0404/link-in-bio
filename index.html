@@ -9,36 +9,82 @@
 
     <style>
 
+      html{
+        min-height: 100%;
+      }
+
       body{ 
+        min-height: 100%;
         padding-top: 128px;
         padding-bottom: 128px;
+        background: linear-gradient(0deg, #003f5b, #2b4b7d, #5f5195, #98509d, #cc4c91, #f25375, #ff6f4e, #ff9913);
+        color: rgba(255, 255, 255, 0.92);
+        text-decoration: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+
+      .recipe-rows{
+        margin-bottom: 20px;
+      }
+
+      .name-row{
+        margin-bottom: 20px;
+        text-align: center;
+        font-family: "Georgia";
+        font-size: 30px;
+        font-weight: 900;
+      }
+
+      .main-container{
+        width: 640px;
+        margin: auto;
       }
 
       .Recipe-image {
-        width: 500px;
-        height: 250px;
+        width: 640px;
+        height: 320px;
         object-fit: cover;
+        margin-bottom: 20px;
+        justify-content: center;
+        display: block;
+        margin:auto;
+        border-radius: 1200px;
       }
 
       .Pizza-image {
-        width: 128px;
-        height: 128px;
+        width: 80px;
+        height: 80px;
         object-fit: cover;
-        border-radius: 128px;
+        border-radius: 80px;
       }
 
       .Oatmeal-image {
-        width: 128px;
-        height: 128px;
+        width: 80px;
+        height: 80px;
         object-fit: cover;
-        border-radius: 128px;
+        border-radius: 80px;
       }
 
       .Rice-image {
-        width: 128px;
-        height: 128px;
+        width: 80px;
+        height: 80px;
         object-fit: cover;
-        border-radius: 128px;
+        border-radius: 80px;
+      }
+
+      .item{
+        margin-bottom: 40px;
+        display: flex;
+        align-items:center;
+        border-radius: 1000px;
+        padding:5px;
+        background-color: rgba(214, 17, 220, 0.44);
+      }
+
+      .item a {
+        flex-grow: 1;
+        text-align: center;
+        display:block;
       }
 
     </style>
@@ -48,7 +94,7 @@
   <body>
     <div class = "main-container">
   
-      <div class = "image-row"> 
+      <div class = "Recipe-image"> 
         <img class = "Recipe-image" src="thumbnails/Recipes.jpg" alt="Recipes Pic">
       </div>
   
@@ -56,22 +102,29 @@
         Recipes to Try
       </div>
   
-      <div class = "recipe rows">   
+      <div class = "recipe-rows"> 
+        
+        <div class = "item">
+          <img class = "Pizza-image" src = "thumbnails/Crispy Pizza.jpg" alt="Crispy Pizza Pic">
+          <a targets="_blank" href="https://www.kingarthurbaking.com/recipes/crispy-cheesy-pan-pizza-recipe">
+           Crispy Cheesy Pan Pizza 
+          </a>
+        </div>
+
+        <div class = "item">
+          <img class = "Oatmeal-image" src = "thumbnails/Banana Bread Oatmeal.jpg" alt="Banana Bread Oatmeal Pic">
+          <a targets="_blank" href="https://zestfulkitchen.com/banana-oatmeal-recipe/">
+           Creamy Banana Oatmeal 
+          </a>
+        </div>
+
+        <div class = "item">
+          <img class = "Rice-image" src = "thumbnails/Yogurt Rice.jpg" alt="Yogurt Rice Pic">
+          <a targets="_blank" href="https://www.padmalakshmi.com/yogurt-rice-recipe">
+            Yogurt Rice
+          </a>
+        </div>
   
-        <img class = "Pizza-image" src = "thumbnails/Crispy Pizza.jpg" alt="Crispy Pizza Pic">
-        <a targets="_blank" href="https://www.kingarthurbaking.com/recipes/crispy-cheesy-pan-pizza-recipe">
-          Crispy Cheesy Pan Pizza 
-        </a>
-  
-        <img class = "Oatmeal-image" src = "thumbnails/Banana Bread Oatmeal.jpg" alt="Banana Bread Oatmeal Pic">
-        <a targets="_blank" href="https://zestfulkitchen.com/banana-oatmeal-recipe/">
-          Creamy Banana Oatmeal 
-        </a>
-  
-        <img class = "Rice-image" src = "thumbnails/Yogurt Rice.jpg" alt="Yogurt Rice Pic">
-        <a targets="_blank" href="https://www.padmalakshmi.com/yogurt-rice-recipe">
-          Yogurt Rice
-        </a>
       </div>
    
     </div>
